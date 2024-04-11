@@ -1,9 +1,9 @@
 const Person = require('./06-person');
-// Método AAA:
+
+// AAA
 // Arrange
 // Act
 // Assert
-
 describe('Test for Person', () => {
   let person;
   // Arrange
@@ -12,11 +12,8 @@ describe('Test for Person', () => {
   });
 
   test('should return down', () => {
-    // Arrange
     person.weight = 45;
-    // Act
     const imc = person.calcIMC();
-    // Assert
     expect(imc).toBe('down');
   });
 
