@@ -11,6 +11,19 @@ defaults: #Cuando es monorepo es decir, multiples proyectos en uno solo
     working-directory: ./api
 
 jobs:
+  lint:
+    runs-on: ubuntu-latest
+    name: ESLint
+    steps:
+        - name: 👍 Checkout
+          uses: actions/checkout@v2
+
+        - name: 📥 Install Dependencies
+          run: npm ci
+
+        - name: 🌹 ESLint
+          run: npm run lint
+
   unit-test:
     runs-on: ubuntu-latest
     steps:
