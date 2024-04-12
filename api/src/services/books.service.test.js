@@ -31,7 +31,7 @@ describe('Test for BooksDervices', () => {
   });
 
   describe('test form getBooks', () => {
-    test('should return a list book', async() => {
+    test('should return a list book', async () => {
       // Arrange
       const fakeBooks = generateManyBook(20);
       mockGetAll.mockResolvedValue(fakeBooks);
@@ -48,7 +48,7 @@ describe('Test for BooksDervices', () => {
       expect(mockGetAll).toHaveBeenCalledWith('books', {});
     });
 
-    test('should return a list book', async() => {
+    test('should return a list book', async () => {
       // Arrange
       const fakeBooks = generateManyBook(4);
       mockGetAll.mockResolvedValue(fakeBooks);

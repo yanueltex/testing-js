@@ -11,7 +11,7 @@ const generateManyBook = (size) => {
   const fakeBooks = [];
   for (let index = 0; index < limit; index += 1) {
     fakeBooks.push(generateOneBook());
-  };
+  }
   return [...fakeBooks];
 };
 
