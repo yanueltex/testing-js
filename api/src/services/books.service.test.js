@@ -37,7 +37,7 @@ describe('Test for BooksDervices', () => {
       mockGetAll.mockResolvedValue(fakeBooks);
       // Act
       const books = await service.getBooks({});
-      console.log(books);
+      // console.log(books);
       // Assert
       expect(books.length).toEqual(fakeBooks.length);
       // Espiamos si fue llamado el MongoLib
@@ -54,7 +54,7 @@ describe('Test for BooksDervices', () => {
       mockGetAll.mockResolvedValue(fakeBooks);
       // Act
       const books = await service.getBooks({});
-      console.log(books);
+      // console.log(books);
       // Assert
       expect(books[0].name).toEqual(fakeBooks[0].name);
     });
